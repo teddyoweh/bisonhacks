@@ -1,0 +1,4 @@
+moviepy
+transformers
+av
+sentence_transformers

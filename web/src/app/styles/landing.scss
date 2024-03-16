@@ -1,0 +1,323 @@
+$temo:"teff";
+.landing{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    .center-box{
+        margin-bottom: 40px;
+        padding:20px 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        background-color:#fff;
+        backdrop-filter: blur(10px);
+        z-index: 100;
+    .center{
+  
+        width: 55%;
+
+    }
+}
+    .se{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    
+        width: 100%;
+
+    }
+    .location-box{
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-width: 1.5px;
+        border-style: solid;
+        border-color: #e8e8e8;
+        border-radius: 60px;
+        padding: 16px 20px;
+        width: 35%;
+        background-color: white;
+        // box-shadow: 0px 0px 20px #c7c6c682;
+        margin-right: 10px;
+        label{
+            font-size: 14px;
+            font-family: "GT America";
+            color: #333;
+            margin-right: 6px;
+            margin-left: 8PX;
+            // width: 100%;
+        
+        }
+        .left{
+            width: 100%;
+        }
+    }
+    .search-box{
+         
+         
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-width: 1.5px;
+        border-style: solid;
+        border-color: #e8e8e8;
+        border-radius: 60px;
+        padding: 16px 25px;
+        width: 100%;
+        background-color: white;
+        // box-shadow: 0px 0px 20px #c7c6c682;
+        .left{
+            display: flex;
+            flex-direction: row;
+            align-items: center; 
+            width: 130%;
+            i{
+                margin-right: 8px;
+                  color: #333; 
+                  font-weight: 900;
+                  font-size: 20px;
+             }
+        }
+        i{
+     
+              color: #aaa; 
+              font-weight: 900;
+              font-size: 20px;
+              line-height: 1px;
+              font-family: "GT America";
+         }
+        input{
+            background-color: transparent;
+            outline: none;
+            border: none;
+            width: 100%;
+            font-family: 'Lato';
+            font-size: 16px;
+            &::content{
+                color: #000
+            }
+            &::placeholder{
+                color: #333;
+                
+            }
+        }
+    }
+  
+  
+            padding-top: 40px;
+      
+            top: 0;
+      
+            .head{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                label{
+                    font-weight: 600;
+                    font-size: 50px;
+                    font-family: "Canela Web";
+                    text-align: center;
+                    color: #111;
+                    margin-bottom: 26px;
+                    width: 100%;
+                    span{
+                        // .dash{
+                        //     background-color: #3e3eff87;
+                        //     width: 38.3%;
+                        //     height: 30px;
+                        //     float: right;
+                        //     position: relative;
+                        //     top: -25px;
+
+                        // }
+                        margin-left: 9px;
+                        padding: 5px 17px;
+                        background-color: #b8b8f35f;
+                        border-width: 1.5px;
+                        border-style: solid;
+                        color: #3e3eff87 !important;
+                        border-color: #3e3eff87;
+                        border-radius: 10px;
+       
+                      
+                        label{
+                            font-family: "Canela Web";
+                            color: #3e3eff87;
+                        }
+                        
+                    }
+                }
+            }
+           
+            .categories{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                margin-top: 20px;
+                .category{
+                    padding: 8px 20px;
+                    border-radius: 10px;
+                    margin-right: 10px;
+                    font-size: 12px;
+                    font-weight: 400;
+                    color: #444;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    font-family: 'GT America';
+                  width: max-content;
+                    // background-color: #f5f5f5;
+                    border-width: 1px 1px 3px ;
+                    border-style: solid;
+                    border-color: #ddd;
+                    cursor: pointer;
+                    label{
+                        color: #444;
+                        cursor: pointer;
+                        font-size: 14px;
+                    }
+                    transition: 0.3s;                    i{
+                        margin-right: 5px;
+                        font-size:20px ;
+                       
+                    }
+                  
+                    &:hover{
+                        transition: 0.3s;
+
+                        box-shadow: 0px 2px 10px #a4a4a482;
+                    }
+                }
+            }
+    
+ 
+    .content{
+        min-height: 100vh;
+        width: 100%;
+        .content-body{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 0px 20px;
+      
+            .product{
+                width: 19%;
+                height: 100%;;
+                margin-bottom: 20px;
+                margin-right: 18px;
+                &:nth-child(5n){
+                    margin-right: 0px;
+                }
+            
+                .product-body{
+                    width: 100%;
+                    // background-color: #f1f1f1;
+                    height: 65vh;
+                    
+                    border-radius: 20px;
+                    video{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 15px;
+                    }
+                  
+                }
+                .product-bottom{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    padding: 10px 4px; 
+                    .product-label{
+                        margin-bottom: 15px;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: space-between;
+                        width: 100%;
+                        label{
+                            font-size: 18px;
+                            font-weight: 600;
+                            font-family: "GT America";
+                            color: #333;
+                            margin-right: 10px;
+                        }
+                        span{
+                            font-size: 21px;
+                            font-weight: 400;
+                            font-family: "GT America";
+                            color: #333;
+                        }
+                     }
+                     .product-btns{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: flex-start;
+                        justify-content: space-between;
+                        width: 100%;
+                        .add-cart{
+                            // height: 40px;
+                            width:50%;
+                            padding: 8px 10px;
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 60px;
+                            background-color: #f1f1f1;
+                            font-family: "Lato";
+                            font-weight: 500;
+                            font-size: 16px;
+                            cursor: pointer;
+                            color: #000;
+                            border-width: 1px;
+                            border-style: solid;
+                            border-color: #ddd;
+                            i{
+                                margin-right: 5px;
+                                font-size: 19px;
+                            }
+                     
+                        }
+                       .save{
+                        // height: 40px;
+                        width:50%;
+                        padding: 8px 10px;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        font-family: "Lato";
+                        border-radius: 60px;
+                        background-color: #7171ca;
+                        margin-left: 10px;
+                        cursor: pointer;
+                        color: white;
+                        font-size: 17px;
+                        i{
+                            margin-right: 5px;
+                            font-size: 19px;
+                        }
+                       }
+                     }
+                }
+               
+            }
+        }
+    }
+}
+

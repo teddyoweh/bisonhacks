@@ -1,0 +1,110 @@
+.auth{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    width: 100%;
+    // background: url("../assets/bg.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-size: contain;
+    form{
+        width: 32%;
+                display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .auth-form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .input-group{
+        width: 100%;
+    }
+    .auth-form-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1{
+            font-family: "Canela Web";
+            font-size: 44px;
+        }
+        span{
+            font-size: 14px;
+            font-weight: 600;
+            font-family: "GT America";
+            color: #9194a1;
+            margin-bottom: 20px;
+        
+        }
+    }
+    input{
+   width: 100%;
+        padding: 10px 15px;
+        margin: 10px 0;
+        border-radius: 8px;
+        border: 1px solid #e2e3ea;
+        border-width: 1px 1px 3px;
+        // border-style: none;
+        outline: none;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: "GT America";
+        // background-color: #f4f5fb;
+
+        &::placeholder{
+            font-size: 16px;
+            font-weight: 500;
+            font-family: "Lato";
+            color: #9194a1;
+        }
+        &.error{
+            border-color: #e56f6f;
+        }
+    }
+    span.error{
+        font-size: 14px;
+        font-weight: 600;
+        font-family: "GT America";
+        color: #e56f6f;
+        margin: 10px 0;
+        margin-bottom: 25px;
+    }
+
+    .btn-group{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 103%;
+        a{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+            margin: 10px 10px;
+            border-radius: 8px;
+            border: none;
+            font-size: 16px;
+            font-weight: 500;
+            font-family: "GT America";
+            cursor: pointer;
+            transition: 0.4s;
+            width: 100%;
+            background-color: #7171ca;
+            color: #fff;
+            &:hover{
+                transition: 0.4s;
+                background-color: #f1f1f1;
+                color: #888;
+            }
+        }
+    }
+}

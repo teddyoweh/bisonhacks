@@ -1,0 +1,249 @@
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    border-width: 0px 0px 1px;
+    border-style: solid;
+    border-color: #ddd;
+    .nav-profile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 20px;
+        border-width: 1px 1px 3px;
+        border-style: solid;
+        border-color: #ddd;
+        padding:8px 15px;
+        border-radius: 50px;
+        a{
+            width: 100%;
+        }
+        &:hover{
+       
+            .dropdown{
+              
+                 
+                    animation-name: slideFadeUp;
+                    animation-duration: 0.5s;
+                    animation-timing-function: ease-out;
+                    animation-fill-mode: forwards;
+                
+            }
+        }
+        .top{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        .dropdown{
+            opacity: 0;
+            background-color: #fff;
+            //f1f1f11f
+            backdrop-filter: blur(19px);
+            border-radius: 10px;
+            width:25%;
+            // height: 250px;
+            position: absolute;
+            top: 8%;
+            z-index: 100000;
+            box-shadow: 0px 4px 30px #ccc;
+            animation-name: slideFadeUp;
+            animation-duration: 0.5s;
+            animation-timing-function: ease-out;
+            animation-fill-mode: forwards;
+
+            padding:9px 10px;
+
+            .dropdown-item{
+                width: 100%;
+                a{
+                    color: #000;
+                    width: 100%;
+                }
+                cursor: pointer;
+                border-width: 1px;
+                border-style: solid;
+                border-color: transparent;
+                padding: 15px 16px;
+                font-family: "GT America";
+                // border-width: 0px 0px 1px;
+                // border-style: solid;
+                // border-color: #ccc;
+                transition: 0.4s;
+                border-radius: 10px;
+                &:hover{
+                    background-color: #f1f1f194;
+                    // border-color: #ddd;
+                }
+            }
+            
+        }
+        img{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        label{
+            font-size: 15px;
+            font-weight: 500;
+            font-family: "Lato";
+            color: #000;
+        }i{
+            font-size: 20px;
+            margin-left: 10px;
+            color: #000;
+        
+        }
+    }
+    .nav-logo{
+        margin-right: 20px;
+        font-family: "Canela Web";
+    }
+    .nav-links{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+        a{
+            text-decoration: none;
+            color: #000;
+            font-size: 16px;
+            font-weight: 400;
+            margin-right: 10px;
+            font-family: "GT America";
+             
+            padding: 5px 10px;
+            border-radius: 8px;
+            cursor: pointer;
+                        transition:0.4s;
+            &:hover{
+               transition:0.4s;
+             
+                background-color: #f1f1f1;
+                color: #888;
+            }
+        }
+    }
+    .btns{
+        margin-left: 20px;
+       a{
+              text-decoration: none;
+              color: #333;
+              font-size: 16px;
+              font-weight: 400;
+              margin-right: 10px;
+              font-family: "GT America";
+              &:hover{
+                color: #000;
+              }
+              &:last-child{
+                background-color: #7171ca;
+                color: white;
+                padding: 10px 20px;
+                border-radius: 30px;
+                transition: all 0.3s ease;
+                &:hover{
+                    background-color: #777;
+                }
+              }
+       } 
+    }
+}
+
+.loader {
+    font-size: 10px;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    position: relative;
+    text-indent: -9999em;
+    animation: mulShdSpin 1.1s infinite ease;
+    transform: translateZ(0);
+  }
+  @keyframes mulShdSpin {
+    0%, 100% {
+        box-shadow: 0em -2.6em 0em 0em #7171ca, 1.8em -1.8em 0 0em rgba(113, 113, 202, 0.2), 2.5em 0em 0 0em rgba(113, 113, 202, 0.2), 1.75em 1.75em 0 0em rgba(113, 113, 202, 0.2), 0em 2.5em 0 0em rgba(113, 113, 202, 0.2), -1.8em 1.8em 0 0em rgba(113, 113, 202, 0.2), -2.6em 0em 0 0em rgba(113, 113, 202, 0.5), -1.8em -1.8em 0 0em rgba(113, 113, 202, 0.7);
+    }
+    12.5% {
+        box-shadow: 0em -2.6em 0em 0em rgba(113, 113, 202, 0.7), 1.8em -1.8em 0 0em #7171ca, 2.5em 0em 0 0em rgba(113, 113, 202, 0.2), 1.75em 1.75em 0 0em rgba(113, 113, 202, 0.2), 0em 2.5em 0 0em rgba(113, 113, 202, 0.2), -1.8em 1.8em 0 0em rgba(113, 113, 202, 0.2), -2.6em 0em 0 0em rgba(113, 113, 202, 0.2), -1.8em -1.8em 0 0em rgba(113, 113, 202, 0.5);
+    }
+    25% {
+        box-shadow: 0em -2.6em 0em 0em rgba(113, 113, 202, 0.5), 1.8em -1.8em 0 0em rgba(113, 113, 202, 0.7), 2.5em 0em 0 0em #7171ca, 1.75em 1.75em 0 0em rgba(113, 113, 202, 0.2), 0em 2.5em 0 0em rgba(113, 113, 202, 0.2), -1.8em 1.8em 0 0em rgba(113, 113, 202, 0.2), -2.6em 0em 0 0em rgba(113, 113, 202, 0.2), -1.8em -1.8em 0 0em rgba(113, 113, 202, 0.2);
+    }
+    37.5% {
+        box-shadow: 0em -2.6em 0em 0em rgba(113, 113, 202, 0.2), 1.8em -1.8em 0 0em rgba(113, 113, 202, 0.5), 2.5em 0em 0 0em rgba(113, 113, 202, 0.7), 1.75em 1.75em 0 0em #7171ca, 0em 2.5em 0 0em rgba(113, 113, 202, 0.2), -1.8em 1.8em 0 0em rgba(113, 113, 202, 0.2), -2.6em 0em 0 0em rgba(113, 113, 202, 0.2), -1.8em -1.8em 0 0em rgba(113, 113, 202, 0.2);
+    }
+    50% {
+        box-shadow: 0em -2.6em 0em 0em rgba(113, 113, 202, 0.2), 1.8em -1.8em 0 0em rgba(113, 113, 202, 0.2), 2.5em 0em 0 0em rgba(113, 113, 202, 0.5), 1.75em 1.75em 0 0em rgba(113, 113, 202, 0.7), 0em 2.5em 0 0em #7171ca, -1.8em 1.8em 0 0em rgba(113, 113, 202, 0.2), -2.6em 0em 0 0em rgba(113, 113, 202, 0.2), -1.8em -1.8em 0 0em rgba(113, 113, 202, 0.2);
+    }
+    62.5% {
+        box-shadow: 0em -2.6em 0em 0em rgba(113, 113, 202, 0.2), 1.8em -1.8em 0 0em rgba(113, 113, 202, 0.2), 2.5em 0em 0 0em rgba(113, 113, 202, 0.2), 1.75em 1.75em 0 0em rgba(113, 113, 202, 0.5), 0em 2.5em 0 0em rgba(113, 113, 202, 0.7), -1.8em 1.8em 0 0em #7171ca, -2.6em 0em 0 0em rgba(113, 113, 202, 0.2), -1.8em -1.8em 0 0em rgba(113, 113, 202, 0.2);
+    }
+    75% {
+        box-shadow: 0em -2.6em 0em 0em rgba(113, 113, 202, 0.2), 1.8em -1.8em 0 0em rgba(113, 113, 202, 0.2), 2.5em 0em 0 0em rgba(113, 113, 202, 0.2), 1.75em 1.75em 0 0em rgba(113, 113, 202, 0.2), 0em 2.5em 0 0em rgba(113, 113, 202, 0.5), -1.8em 1.8em 0 0em rgba(113, 113, 202, 0.7), -2.6em 0em 0 0em #7171ca, -1.8em -1.8em 0 0em rgba(113, 113, 202, 0.2);
+    }
+    87.5% {
+        box-shadow: 0em -2.6em 0em 0em rgba(113, 113, 202, 0.2), 1.8em -1.8em 0 0em rgba(113, 113, 202, 0.2), 2.5em 0em 0 0em rgba(113, 113, 202, 0.2), 1.75em 1.75em 0 0em rgba(113, 113, 202, 0.2), 0em 2.5em 0 0em rgba(113, 113, 202, 0.2), -1.8em 1.8em 0 0em rgba(113, 113, 202, 0.5), -2.6em 0em 0 0em rgba(113, 113, 202, 0.7), -1.8em -1.8em 0 0em #7171ca;
+    }
+}
+
+ 
+  .loader-div{
+    position: fixed;
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+
+  .slide-up{
+    animation-name: slideFadeUp;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+  }
+  .slide-up1{
+    animation-name: slideFadeUp;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+  }
+  @keyframes slideFadeUp {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  
+  }
+  .slide-down {
+    animation-name: slideFadeDown;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes slideFadeDown {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+  }
