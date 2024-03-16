@@ -4,6 +4,14 @@ import { api, endpoints } from "@/app/config/server";
 import { usePathname } from "next/navigation"
 import { useEffect, useState } from "react";
 import '../../styles/myshops.scss'
+
+function RenderCreate(){
+    return (
+        <div className="render-create">
+            
+        </div>
+    )
+}
 export default function Slug(){
     const pathname = usePathname()
     const shop_id = pathname.split('/').slice(2).join('/'); 
@@ -46,7 +54,7 @@ export default function Slug(){
         <div className="empty-products">
             <i class='bx bxs-package'></i>
             <label htmlFor="">
-                No Products or Service
+                No Products or Service, Yet!
             </label>
         </div>
         :

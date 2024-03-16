@@ -102,13 +102,7 @@
         }
     }
 
-    .empty-products{
-        min-height: 40vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+
     }
     .add-btn{
         padding: 10px;
@@ -125,6 +119,19 @@
         }
     }
     .shop-content{
+        .empty-products{
+            min-height: 40vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            color: #777;
+            font-family: "Lato";
+            label{
 
+                margin-left: 10px;
+            }
+        }
     }
 }
