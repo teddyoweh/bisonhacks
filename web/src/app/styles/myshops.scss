@@ -125,7 +125,7 @@
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            font-size: 30px;
+            font-size: 25px;
             color: #777;
             font-family: "Lato";
             label{
@@ -133,5 +133,11 @@
                 margin-left: 10px;
             }
         }
+    }
+}
+
+.render-create{
+    .render-top{
+        
     }
 }

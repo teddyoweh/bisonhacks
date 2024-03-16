@@ -188,6 +188,7 @@ export default function CreateShop() {
                 locations && shopLocation.length>0&& locations.slice(0,5).map((lox,index)=>{
                     return (
                         <div className="location-div"
+                        key={index}
                         onClick={()=>{
                             setShopLocation(lox.formattedAddress)
                         }}

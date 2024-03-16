@@ -8,7 +8,12 @@ import '../../styles/myshops.scss'
 function RenderCreate(){
     return (
         <div className="render-create">
-            
+            <div className="render-top">
+
+            </div>
+            <div className="create-content">
+
+            </div>
         </div>
     )
 }

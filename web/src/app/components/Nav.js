@@ -102,7 +102,9 @@ export default function Nav() {
                 {
                   profileoptions.map((prox,index)=>{
                     return (
-                      <div className="dropdown-item">
+                      <div className="dropdown-item"
+                      key={index}
+                      >
                         <Link href={prox.link}>
                         {prox.label}
                         </Link>

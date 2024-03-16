@@ -38,7 +38,7 @@ export default function MyShops(){
                         return (
 
                             <Link className="shop-item"
-                            
+                            key={index}
                             href={`my_shops/${shp._id}`}
                             >
                             
