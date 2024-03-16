@@ -3,6 +3,7 @@ import Link from 'next/link';
 import '../styles/nav.scss'
 import { useContext, useState } from 'react';
 import { AppContext } from '../context/appContext';
+import logo from '../assets/2.png'
 export default function Nav() {
   const { user,auth,loading} = useContext(AppContext);
      const links = [
@@ -62,7 +63,10 @@ export default function Nav() {
         </div>: <div className="nav">
       
       <div className="nav-logo">
-       MileOne
+       <img src={logo.src} alt="" />
+       <label htmlFor="">
+        MileOne
+       </label>
       </div>
      <div className="nav-links">
             {links.map((link, index) => (
